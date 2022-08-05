@@ -4,7 +4,7 @@
 
 ---
 
-<h1 align="center">🖩Calculadora</h1>
+<h1 align="center">📋To-do list</h1>
 <h3 align="center">✔ STATUS: Concluído ✔</h3>
 
 ---
@@ -19,6 +19,9 @@
 
 ✅ Material UI<br>
 ✅ Animações<br>
+✅ Editar item<br>
+✅ Remover item<br>
+✅ Responsividade<br>
 ### etc...
 ---
 
@@ -26,6 +29,10 @@
 
 ```
 npm install
+```
+ou
+```
+npm i
 ```
 
 <h2>E logo em seguida:</h2>
@@ -58,6 +65,6 @@ npm start
 <h2 align="center">📝Licença</h2>
 
 <p align="center">
-   Este repositório está sob licença MIT. Você pode ver o arquivo <a href="https://github.com/gabriell-c/Calculadora/blob/main/License"> LICENSE</a>
+   Este repositório está sob licença MIT. Você pode ver o arquivo <a href="https://github.com/gabriell-c/To-do-list/blob/main/License"> LICENSE</a>
    para mais detalhes. 😉
 </p>
