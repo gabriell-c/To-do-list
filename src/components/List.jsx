@@ -28,10 +28,12 @@ export default function CheckboxList({todo, deleteItem, editTodo}) {
       <Paper style={{padding: '.4em 0'}}>
         <ListItem
           secondaryAction={
-            <div style={{ cursor: 'pointer'}}>
-              <EditIcon  style={{marginRight: '.2em'}} sx={{ color: 686868[500] }}
-                onClick={()=> setopenDialog(true)}/>
-              <DeleteIcon  onClick={() => deleteItem(todo.id)} sx={{ color: 686868[500] }}/>
+            <div style={{display: 'flex'}}>
+              <EditIcon  style={{marginRight: '.2em', cursor: 'pointer'}} sx={{ color: 686868[500] }}
+              onClick={()=> setopenDialog(true)}/>
+              <div style={{ cursor: 'pointer'}}>
+                <DeleteIcon  onClick={() => deleteItem(todo.id)} sx={{ color: 686868[500] }}/>
+              </div>
             </div>
           }
           disablePadding>

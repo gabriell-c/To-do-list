@@ -24,14 +24,16 @@ export default function Home() {
   }
 
   return (
-    <S.Container>
-      <Form addTodo={addTodo}/>
-      <List  sx={{ borderRadius: '5px'}}>
-      {todos.map( (todo, key) => (
-      <div key={key} style={{marginTop: '1em', boxShadow: '1px 1px 3px #11111180'}}>
-        <TodoItem editTodo={editTodo} deleteItem={deleteItem} todo={todo}/>
-      </div>))}
-      </List>
-    </S.Container>
+    <S.All>
+        <S.Container>
+            <Form addTodo={addTodo}/>
+            <List  sx={{ borderRadius: '5px'}}>
+                {todos.map( (todo, key) => (
+                <div key={key} style={{marginTop: '1em', boxShadow: '1px 1px 3px #11111180'}}>
+                    <TodoItem editTodo={editTodo} deleteItem={deleteItem} todo={todo}/>
+                </div>))}
+            </List>
+        </S.Container>
+    </S.All>
   )
 }

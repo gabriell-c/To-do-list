@@ -1,13 +1,20 @@
 import styled from "styled-components";
 
+export  const All = styled.div`
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+`
+
 export const Container = styled.div`
-    height: 50%;
+    overflow-y: auto;
+    max-height: 98vh;
     width: 550px;
     padding: .5em;
     background: #eee;
     border-radius: 5px;
     box-shadow: 1px 1px 3px #11111180;
-    font-family: 'Poppins';
     font-weight: 400;
 
     @media only screen and (max-width: 550px){
@@ -18,7 +25,6 @@ export const Container = styled.div`
 export const Cont = styled.div`
     padding: .5em;
     height: 54px;
-    font-family: 'Poppins';
     font-weight: 400;
     width: 100%;
     align-items: center;

@@ -12,3 +12,16 @@ body{
   width: 100%;
   background: linear-gradient(45deg, #eeeeee 0%, #dddddd 100%);
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #999;
+}
