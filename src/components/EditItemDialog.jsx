@@ -22,11 +22,8 @@ export default function EditItemDialog({open, Dial, todo, editTodo}) {
 
   return (
       <Dialog
-        open={open}
-        TransitionComponent={Transition}
-        keepMounted
-        fullWidth
-        onClose={Dial}
+        open={open} TransitionComponent={Transition}
+        keepMounted fullWidth onClose={Dial}
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogTitle>{"Editando item de tarefa"}</DialogTitle>

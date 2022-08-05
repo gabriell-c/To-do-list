@@ -2,11 +2,11 @@ import Form from './components/Form';
 import TodoItem from './components/List';
 import * as S from './components/Style';
 import { List } from '@mui/material'
-import { useState } from 'react'
+import * as React from 'react'
 
 export default function Home() {
 
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = React.useState([]);
 
   const addTodo=(todo)=>{
     setTodos([...todos, todo])

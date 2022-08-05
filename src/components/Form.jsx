@@ -2,13 +2,12 @@ import * as React from 'react';
 import { Button, Paper, TextField } from '@mui/material';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import { Cont } from './Style'
-import  { useState, useEffect } from 'react'
 
 export default function BasicTextFields({addTodo}) {
 
-  const [text, setText] = useState('')
-  const [id, setId] = useState(0)
-  const [disabledCheck, setDisabled] = useState(true)
+  const [text, setText] = React.useState('')
+  const [id, setId] = React.useState(0)
+  const [disabledCheck, setDisabled] = React.useState(true)
 
   const createTodo=(texts)=>{
     const todoObj = { texts: texts, id: id };
@@ -17,12 +16,16 @@ export default function BasicTextFields({addTodo}) {
     document.getElementById("outlined-basic").value = ''
   }
 
-  useEffect(()=>{
+  const chk=()=>{
     if(text === ''){
-      setDisabled(true)
-    }else{
-      setDisabled(false)
+        setDisabled(true)
+      }else{
+        setDisabled(false)
     }
+  }
+
+  React.useEffect(()=>{
+    chk()
   })
 
   return (
