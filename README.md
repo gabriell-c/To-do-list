@@ -4,7 +4,7 @@
 
 ---
 
-<h1 align="center">🖩Calculadora</h1>
+<h1 align="center">📋To-do list</h1>
 <h3 align="center">✔ STATUS: Concluído ✔</h3>
 
 ---
@@ -19,6 +19,9 @@
 
 ✅ Material UI<br>
 ✅ Animações<br>
+✅ Editar item<br>
+✅ Remover item<br>
+✅ Responsividade<br>
 ### etc...
 ---
 
@@ -26,6 +29,10 @@
 
 ```
 npm install
+```
+ou
+```
+npm i
 ```
 
 <h2>E logo em seguida:</h2>
