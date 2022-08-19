@@ -11,7 +11,7 @@
 
 <h2 align="center">📖Sobre</h2>
 
-<p align="center">Este projeto foi realizado para desenvolver melhor minhas habilidades em React, como também para uso pessoal, o projeto consiste em pode adicionar, editar e remover uma nova tarefa. Oprojeto é 100% responsivo.</p>
+<p align="center">Este projeto foi realizado para desenvolver melhor minhas habilidades em React, como também para uso pessoal, o projeto consiste em pode adicionar, editar e remover uma nova tarefa. E um campo de busca que mostra a tarefa em espesifica. Oprojeto é 100% responsivo.</p>
 
 ---
 
@@ -45,8 +45,11 @@ npm start
 
 <h2 align="center">🖥Preview</h2>
 
-<img src="readme_imgs\todo list view.PNG" alt="Previw desktop"></img>
+<img src="readme_imgs/todo.JPG" alt="Previw desktop"></img>
 <br>
+<br>
+<br>
+<img src="readme_imgs/todo mobile.JPG" alt="Previw mobile"></img>
 
 <h2> Veja o projeto em funcionamento <a target="_blank" href="https://to-do-list-react-projeto.netlify.app/">aqui</a>. 🧐</h2>
 
