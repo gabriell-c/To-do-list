@@ -39,7 +39,7 @@ export default function CheckboxList({todo, deleteItem, editTodo}) {
               <Checkbox id="Checkbo" onClick={itemRisk} edge="start" tabIndex={-1} disableRipple />
             </ListItemIcon>
             <Tooltip title={todo.texts}>
-                <div style={{maxWidth: '90%'}}>
+                <div style={{maxWidth: '80%'}}>
                     <ListItemText style={{opacity: check ? '75%' : '100%',
                     textDecoration:  check ? 'line-through' : 'none',
                     }} primary={todo.texts}/>
