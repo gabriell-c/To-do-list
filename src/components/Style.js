@@ -30,7 +30,6 @@ export const Container = styled.div`
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            max-width: 90%;
         }
     }
 `
