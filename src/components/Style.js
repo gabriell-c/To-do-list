@@ -11,8 +11,8 @@ export  const All = styled.div`
 export const Container = styled.div`
     overflow-y: auto;
     max-height: 98vh;
-    width: 700px;
-    max-width: 90%;
+    width: 90vw;
+    max-width: 700px;
     padding: .5em;
     background: #eee;
     border-radius: 5px;
@@ -30,7 +30,7 @@ export const Container = styled.div`
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            max-width: 100%;
+            max-width: 90%;
         }
     }
 `
