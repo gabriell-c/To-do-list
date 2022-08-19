@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, Paper, TextField } from '@mui/material';
+import { Button, TextField } from '@mui/material';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import { Cont } from './Style'
 
@@ -29,9 +29,8 @@ export default function BasicTextFields({addTodo}) {
   })
 
   return (
-    <Paper>
         <Cont>
-            <TextField size="small" fullWidth id="outlined-basic"
+            <TextField size="small" autoComplete='off' fullWidth id="outlined-basic"
             onChange={(e)=> setText(e.target.value)}
             label="Adicionar tarefa" style={{fontWeight: 'bold', letterSpacing: '1px'}}
             variant="outlined" />
@@ -39,6 +38,5 @@ export default function BasicTextFields({addTodo}) {
             '1em', height: '100%', fontFamily: 'Poppins', fontWeight: 'bold'}} variant="contained">
             <AddCircleIcon  sx={{ fontSize: 20, marginRight: .5, fontWeight: 'bold'}}/>ADD</Button>
         </Cont>
-    </Paper>
   );
 }

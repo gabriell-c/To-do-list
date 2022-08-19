@@ -5,20 +5,33 @@ export  const All = styled.div`
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 `
 
 export const Container = styled.div`
     overflow-y: auto;
     max-height: 98vh;
-    width: 550px;
+    width: 700px;
+    max-width: 90%;
     padding: .5em;
     background: #eee;
     border-radius: 5px;
     box-shadow: 1px 1px 3px #11111180;
     font-weight: 500;
 
-    @media only screen and (max-width: 550px){
-        width: 90vw;
+    #HeaderArea{
+        padding-bottom: 1em;
+    }
+
+    ul{
+        padding: 0;
+
+        span{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 100%;
+        }
     }
 `
 
@@ -31,4 +44,38 @@ export const Cont = styled.div`
     display: flex;
     align-content: center;
     justify-content: space-between;
+
+    button{
+        padding: 25px 30px;
+    }
+
+    div{
+        height: 50px;
+    }
+    
+    label{
+        line-height: 2em;
+    }
+`
+
+export const Item = styled.div`
+    box-shadow: 1px 1px 3px #11111180;
+    margin-top: 1em;
+`
+
+export const InputArea = styled.div`
+    width: 100%;
+    padding: .5em;
+
+    div{
+        height: 50px;
+    }
+
+    label{
+        line-height: 1.1em;
+    }
+
+    fieldset{
+        border-width: 2px;
+    }
 `

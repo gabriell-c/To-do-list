@@ -1,16 +1,14 @@
 import Form from './components/Form';
 import TodoItem from './components/List';
 import * as S from './components/Style';
-import { List } from '@mui/material'
+import { List , Paper, TextField} from '@mui/material'
 import * as React from 'react'
 
 export default function Home() {
 
   const [todos, setTodos] = React.useState([]);
-
-  const addTodo=(todo)=>{
-    setTodos([...todos, todo])
-  }
+  const [search, setSearch] = React.useState('')
+  const addTodo=(todo)=>{setTodos([...todos, todo])}
 
   const deleteItem=(id)=>{
     var filtered = todos.filter(todo => todo.id !== id)
@@ -23,15 +21,22 @@ export default function Home() {
     setTodos(ArrayItens)
   }
 
+  const searchFilter = todos.filter((item)=>item.texts.toLowerCase().startsWith(search.toLowerCase()))
+
   return (
     <S.All>
         <S.Container>
-            <Form addTodo={addTodo}/>
+            <Paper id='HeaderArea'>
+                <S.InputArea>
+                    <TextField autoComplete='off' margin='dense' type='search' onChange={(e)=>setSearch(e.target.value)} fullWidth id="outlined-basic" label="Pesquisar por tarefa" variant="outlined" />
+                </S.InputArea>
+                <Form addTodo={addTodo}/>                
+            </Paper>
             <List  sx={{ borderRadius: '5px'}}>
-                {todos.map( (todo, key) => (
-                <div key={key} style={{marginTop: '1em', boxShadow: '1px 1px 3px #11111180'}}>
+                {searchFilter.map( (todo, key) => (
+                <S.Item key={key} >
                     <TodoItem editTodo={editTodo} deleteItem={deleteItem} todo={todo}/>
-                </div>))}
+                </S.Item>))}
             </List>
         </S.Container>
     </S.All>
