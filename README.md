@@ -11,7 +11,7 @@
 
 <h2 align="center">📖Sobre</h2>
 
-<p align="center">Este projeto foi realizado para desenvolver melhor minhas habilidades em React, como também para uso pessoal, o projeto consiste em pode adicionar, editar e remover uma nova tarefa. E um campo de busca que mostra a tarefa em espesifica. Oprojeto é 100% responsivo.</p>
+<p align="center">Este projeto foi realizado para desenvolver melhor minhas habilidades em React, como também para uso pessoal, o projeto consiste em pode adicionar, editar e remover uma nova tarefa. E um campo de busca que mostra a tarefa em específica. O projeto é 100% responsivo.</p>
 
 ---
 
